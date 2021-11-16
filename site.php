@@ -10,26 +10,29 @@
   
   <?php 
 
-  $phrase = "Marko Academy";
-  echo $phrase;
-  echo "<br>";
-  echo strtolower($phrase);
-  echo "<br>";
-  echo strtoupper($phrase);
-  echo "<br>";
-  echo strlen($phrase);
-  echo "<br>";
-  echo $phrase[0] = "B";
-  echo "<br>";
-  echo $phrase;
-  echo "<br>";
-  echo $phrase[1];
-  echo "<br>";
-  echo str_replace("Barko", "Panda", $phrase);
-  echo "<br>";
-  echo $phrase;
-  echo "<br>";
-  echo substr($phrase, 8, 3);
+    echo -40;
+    echo "<br>";
+    echo -40.8;
+    echo "<br>";
+    echo 5 + 5;
+    echo "<br>";
+    echo 10 % 3;
+    echo "<br>";
+    echo abs(-100);
+    echo "<br>";
+    echo pow(2,4);
+    echo "<br>";
+    echo sqrt(23);
+    echo "<br>";
+    echo max(2, 10);
+    echo "<br>";
+    echo min(2,3);
+    echo "<br>";
+    echo round(3.2);
+    echo "<br>";
+    echo ceil(2.2);
+    echo "<br>";
+    echo floor(4.55);
 
   ?>
 </body>
