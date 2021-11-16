@@ -9,15 +9,14 @@
 <body>
   
   <?php 
+
+    $name = 'John';
+    $age = 35;
   
-    echo 'Hello world';
-    echo '<br>';
-    echo 'Less 4';
-    echo '<br>';
-    echo '<h1>Markov naslov!</h1>';
-    echo '<hr>';
-    echo '<p>This is paragraph</p>';
-    echo '<br>';
+    echo "There once was a man named $name <br>";
+    echo "He was $age years old <br>";
+    echo "He really liked the name $name <br>";
+    echo "But didn't like being $age <br>";
 
   ?>
 </body>
