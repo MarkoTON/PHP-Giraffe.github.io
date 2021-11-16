@@ -10,15 +10,26 @@
   
   <?php 
 
-  $phrase = "To be or not to be";
-  $age_int = 30;
-  $float_gpa = 32.4543;
-  $isMale = false;
-  $null = null;
-
-  echo "Hello";
+  $phrase = "Marko Academy";
+  echo $phrase;
   echo "<br>";
-  echo 324.32;
+  echo strtolower($phrase);
+  echo "<br>";
+  echo strtoupper($phrase);
+  echo "<br>";
+  echo strlen($phrase);
+  echo "<br>";
+  echo $phrase[0] = "B";
+  echo "<br>";
+  echo $phrase;
+  echo "<br>";
+  echo $phrase[1];
+  echo "<br>";
+  echo str_replace("Barko", "Panda", $phrase);
+  echo "<br>";
+  echo $phrase;
+  echo "<br>";
+  echo substr($phrase, 8, 3);
 
   ?>
 </body>
