@@ -10,13 +10,15 @@
   
   <?php 
 
-    $name = 'John';
-    $age = 35;
-  
-    echo "There once was a man named $name <br>";
-    echo "He was $age years old <br>";
-    echo "He really liked the name $name <br>";
-    echo "But didn't like being $age <br>";
+  $phrase = "To be or not to be";
+  $age_int = 30;
+  $float_gpa = 32.4543;
+  $isMale = false;
+  $null = null;
+
+  echo "Hello";
+  echo "<br>";
+  echo 324.32;
 
   ?>
 </body>
