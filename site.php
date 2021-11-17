@@ -9,21 +9,15 @@
 <body>
 
   <form action="site.php" method="get">
-    <label for="name">Name</label>
-    <input type="text" name="name">
+    <input type="number" name="num1">
     <br>
-    <label for="email">Email</label>
-    <input type="text" name="email">
+    <input type="number" name="num2">
     <br>
-    <button type="submit">Submit</button>
+    <input type="submit">
   </form>
-  
+  Answer:
   <?php 
-
-    echo $_GET["name"];
-    echo "<br>";
-    echo $_GET["email"];
-
+    echo $_GET["num1"] + $_GET["num2"];
   ?>
 </body>
 </html>
