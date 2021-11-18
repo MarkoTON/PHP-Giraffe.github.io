@@ -9,15 +9,24 @@
 <body>
 
   <form action="site.php" method="get">
-    <input type="number" name="num1">
+    Color:<input type="text" name="color">
     <br>
-    <input type="number" name="num2">
+    Plural noun:<input type="text" name="plural">
+    <br>
+    Celebrity<input type="text" name="celebrity">
     <br>
     <input type="submit">
   </form>
   Answer:
+  <br>
   <?php 
-    echo $_GET["num1"] + $_GET["num2"];
+    $color = $_GET["color"];
+    $plural = $_GET["plural"];
+    $celebrity = $_GET["celebrity"];
+
+    echo "Roses are $color <br>";
+    echo "$plural are blue <br>";
+    echo "I love $celebrity <br>";
   ?>
 </body>
 </html>
