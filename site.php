@@ -7,18 +7,20 @@
   <title>Document</title>
 </head>
 <body>
-
-  <form action="site.php" method="post">
-    Password: <input type="text" name="password"> <br>
-    <input type="submit">
-  </form>
-  Answer:
+  Array:
   <br>
   <?php 
-    $password = $_POST["password"];
+    
+    // $frends = array("Kevin", 1, false, "Karen", "Oscar", "Jim");
+    // $frends = ["Kevin", 1, false, "Karen", "Oscar", "Jim"];
+    $frends = array("Kevin", "Karen", "Oscar", "Jim");
+    $frends[1] = "Dwoght";
+    $frends[2] = 5555;
+    $frends[4] = "marko";
+    $frends[6] = "Metallica";
+    echo var_dump($frends);
+    echo $frends[5];
 
-    echo $password;
-   
   ?>
 </body>
 </html>
