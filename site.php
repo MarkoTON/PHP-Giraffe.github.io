@@ -8,16 +8,16 @@
 </head>
 <body>
 
-  <form action="site.php" method="get">
-    Name: <input type="text" name="name">
+  <form action="site.php" method="post">
+    Password: <input type="text" name="password"> <br>
     <input type="submit">
   </form>
   Answer:
   <br>
   <?php 
-    $color = $_GET["name"];
+    $password = $_POST["password"];
 
-    echo $color;
+    echo $password;
    
   ?>
 </body>
