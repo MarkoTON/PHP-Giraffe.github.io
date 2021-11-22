@@ -7,20 +7,17 @@
   <title>Document</title>
 </head>
 <body>
-  Array:
+
+  <form action="site.php" method="post">
+    Apples:<input type="checkbox" name="fruits[]" value="apples"><br>
+    Bananas:<input type="checkbox" name="fruits[]" value="bananas"><br>
+    Pears:<input type="checkbox" name="fruits[]" value="pears"><br>
+    <input type="submit">
+  </form>
   <br>
   <?php 
-    
-    // $frends = array("Kevin", 1, false, "Karen", "Oscar", "Jim");
-    // $frends = ["Kevin", 1, false, "Karen", "Oscar", "Jim"];
-    $frends = array("Kevin", "Karen", "Oscar", "Jim");
-    $frends[1] = "Dwoght";
-    $frends[2] = 5555;
-    $frends[4] = "marko";
-    $frends[6] = "Metallica";
-    echo var_dump($frends);
-    echo $frends[5];
-
+    $fruits = $_POST["fruits"];
+    echo var_dump($fruits);
   ?>
 </body>
 </html>
