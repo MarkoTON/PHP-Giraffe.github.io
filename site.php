@@ -9,15 +9,20 @@
 <body>
 
   <form action="site.php" method="post">
-    Apples:<input type="checkbox" name="fruits[]" value="apples"><br>
-    Bananas:<input type="checkbox" name="fruits[]" value="bananas"><br>
-    Pears:<input type="checkbox" name="fruits[]" value="pears"><br>
+    Student name: <input type="text" name="student">
     <input type="submit">
   </form>
   <br>
   <?php 
-    $fruits = $_POST["fruits"];
-    echo var_dump($fruits);
+    $grades = array("Jim" => "A+", "Pam" => "B-", "Marko" => "A", "Oscar" => "C+");
+    // echo $grades["Jim"]; 
+    // echo "<br>";
+    // $grades["Jim"] = "F"; 
+    // echo "<br>";
+    // echo $grades["Jim"]; 
+    // echo "<br>";
+    // echo $grades["Marko"]; 
+    echo $grades[$_POST["student"]];
   ?>
 </body>
 </html>
