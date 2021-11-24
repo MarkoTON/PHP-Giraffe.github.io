@@ -8,13 +8,29 @@
 </head>
 <body>
 
+  <!-- I wake up 
+  If I'm hungry
+    I eat breakast
+
+  I look at my phone
+  If it's about to die
+    I charge it
+
+  I leave mu house
+  If it's cloudy
+    I bring an umbrella
+  Otherwise
+    I bring sunglasses -->
   <br>
   <?php 
-    function cube($num){
-      $res = $num * $num * $num;
-      return $res;
-    };
-    echo cube(4);
+    $isMale = false;
+    $isTall = true;
+    // else if or elseif - moze i jedno i drugo da se kuca
+    if($isMale && $isTall){
+      echo "It is male and it is tall";
+    } elseif ($isMale = false && $isTall = true) {
+      echo "It is not male but it is tall";
+    }
   ?>
 </body>
 </html>
