@@ -9,10 +9,10 @@
 <body>
 
   <br>
-  <?php 
-    // echo "Comments are fun!";
-    /* This is secund one... */
-    echo "Comments are fun!"; // Coment in line..
-  ?>
+  <?php include "header.html";?>
+
+    <p>This is body</p>
+  
+  <?php include "footer.html";?>
 </body>
 </html>
