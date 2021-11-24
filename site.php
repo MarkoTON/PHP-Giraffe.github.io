@@ -8,22 +8,34 @@
 </head>
 <body>
 
-
+  <form action="site.php" method="post">
+    What was your grade? <br>
+    <input type="text" name="grade">
+    <input type="submit">
+  </form>
   <br>
   <?php 
-    $i = 0;
-    while($i < 10){
-      echo "$i <br>";
-      $i++;
-    };
-
-    echo "<hr>";
-    $x = 1;
-
-    do {
-      echo "The number is: $x <br>";
-      $x++;
-    } while ($x <= 5);
+    $grade = $_POST["grade"];
+    // echo $grade;
+    switch($grade){
+      case "A":
+        echo "You did amazinf!";
+        break;
+      case "B":
+        echo "You did well.";
+        break;
+      case "C":
+        echo "You can do better.";
+        break;
+      case "D":
+        echo "You suck!";
+        break;
+      case "F":
+        echo "Hahahhaha";
+        break;
+      default : 
+        echo "What?";
+    }
   ?>
 </body>
 </html>
