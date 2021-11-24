@@ -8,21 +8,21 @@
 </head>
 <body>
 
-  <form action="site.php" method="post">
-    Student name: <input type="text" name="student">
-    <input type="submit">
-  </form>
+  <!-- <form action="site.php" method="post">
+    Name: <input type="text" name="student">
+    <input type="submit" sayHi>
+  </form> -->
   <br>
   <?php 
-    $grades = array("Jim" => "A+", "Pam" => "B-", "Marko" => "A", "Oscar" => "C+");
-    // echo $grades["Jim"]; 
-    // echo "<br>";
-    // $grades["Jim"] = "F"; 
-    // echo "<br>";
-    // echo $grades["Jim"]; 
-    // echo "<br>";
-    // echo $grades["Marko"]; 
-    echo $grades[$_POST["student"]];
+    function sayHi($name){
+      echo "Hello $name";
+      echo "<br>";
+    };
+    // $name = $_POST["student"];
+    $ime = "Marko";
+    $ime2 = "Tom";
+    sayHi($ime);
+    sayHi($ime2);
   ?>
 </body>
 </html>
