@@ -10,26 +10,9 @@
 
   <br>
   <?php 
-    $i = 0;
-    while($i < 10){
-      echo "$i <br>";
-      $i++;
-    };
-
-    echo "<hr>";
-
-    for($i = 0; $i < 5; $i++){
-      echo "$i <br>";
-    };
-
-    echo "<hr>";
-
-    $array = [2,3,45,6,6,3,3,2,2,22,3,2];
-
-    for($i = 0; $i < count($array); $i++){
-      echo "$array[$i] <br>";
-    };
-
+    // echo "Comments are fun!";
+    /* This is secund one... */
+    echo "Comments are fun!"; // Coment in line..
   ?>
 </body>
 </html>
