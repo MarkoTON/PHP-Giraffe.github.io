@@ -8,21 +8,13 @@
 </head>
 <body>
 
-  <!-- <form action="site.php" method="post">
-    Name: <input type="text" name="student">
-    <input type="submit" sayHi>
-  </form> -->
   <br>
   <?php 
-    function sayHi($name){
-      echo "Hello $name";
-      echo "<br>";
+    function cube($num){
+      $res = $num * $num * $num;
+      return $res;
     };
-    // $name = $_POST["student"];
-    $ime = "Marko";
-    $ime2 = "Tom";
-    sayHi($ime);
-    sayHi($ime2);
+    echo cube(4);
   ?>
 </body>
 </html>
