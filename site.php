@@ -17,12 +17,19 @@
     };
 
     echo "<hr>";
-    $x = 1;
 
-    do {
-      echo "The number is: $x <br>";
-      $x++;
-    } while ($x <= 5);
+    for($i = 0; $i < 5; $i++){
+      echo "$i <br>";
+    };
+
+    echo "<hr>";
+
+    $array = [2,3,45,6,6,3,3,2,2,22,3,2];
+
+    for($i = 0; $i < count($array); $i++){
+      echo "$array[$i] <br>";
+    };
+
   ?>
 </body>
 </html>
