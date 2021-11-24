@@ -8,33 +8,30 @@
 </head>
 <body>
 
-  <!-- I wake up 
-  If I'm hungry
-    I eat breakast
-
-  I look at my phone
-  If it's about to die
-    I charge it
-
-  I leave mu house
-  If it's cloudy
-    I bring an umbrella
-  Otherwise
-    I bring sunglasses -->
+  <form action="site.php" method="post">
+    First num: <input type="number" step="0.1" name="num1" ><br>
+    OP: <input type="text" name="op" ><br>
+    Second num: <input type="number" step="0.1" name="num2" ><br>
+    <input type="submit">
+  </form>
   <br>
   <?php 
-    // echo max(3,6);
-    function getMax($num1, $num2){
-      if($num1 == $num2){
-        echo "They are =";
-      } else if ($num1 > $num2) {
-        echo "$num1 is bigger";
-      } else {
-        echo "$num2 is bigger";
-      }
+    $num1 = $_POST["num1"];
+    $num2 = $_POST["num2"];
+    $op = $_POST["op"];
+
+    if($op == "+"){
+      echo $num1 + $num2;
+    } else if ($op == "-"){
+      echo $num1 - $num2;
+    } else if ($op == "/"){
+      echo $num1 / $num2;
+    } else if ($op == "*"){
+      echo $num1 * $num2;
+    } else {
+      echo "Invalud Operator";
     }
 
-    getMax(5,5);
   ?>
 </body>
 </html>
