@@ -23,14 +23,18 @@
     I bring sunglasses -->
   <br>
   <?php 
-    $isMale = false;
-    $isTall = true;
-    // else if or elseif - moze i jedno i drugo da se kuca
-    if($isMale && $isTall){
-      echo "It is male and it is tall";
-    } elseif ($isMale = false && $isTall = true) {
-      echo "It is not male but it is tall";
+    // echo max(3,6);
+    function getMax($num1, $num2){
+      if($num1 == $num2){
+        echo "They are =";
+      } else if ($num1 > $num2) {
+        echo "$num1 is bigger";
+      } else {
+        echo "$num2 is bigger";
+      }
     }
+
+    getMax(5,5);
   ?>
 </body>
 </html>
