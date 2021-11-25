@@ -10,33 +10,36 @@
 
   <br>
   <?php 
-    class Student {
-      var $name;
-      var $major;
-      var $gpa;      
+    class Movie {
+      public $title;
+      private $rating;
 
-      function __construct($name, $major, $gpa)
+
+      function __construct($title, $rating)
       {
-        $this ->name = $name;
-        $this ->major = $major;
-        $this ->gpa = $gpa;
+        $this->title = $title;
+        $this->setRating($rating);
       }
-      // PHP ne moze da stampa cist true/false zato mora pod stringom
-      function hasHonors(){
-        if($this->gpa >= 3.5){
-          return "true";
+
+      function getRating(){
+        return $this->rating;
+      }
+
+      function setRating($rating){
+        if($rating == "G" || $rating == "PG-13" || $rating == "R" || $rating == "PG"){
+          $this->rating = $rating;
         } else {
-          return "false";
-        };
+          $this->rating = "NR";
+        }
       }
+
     };
 
-    $student1 = new Student("Jim", "Business", 2.8);
-    $student2 = new Student("Pam", "Art", 3.6);
-
-    echo $student1->hasHonors();
+    $avengers = new Movie("Avengers", "PG-13");
+    // $avengers->rating = "Dog";
+    $avengers->setRating("sdfsd");
     echo "<br>";
-    echo $student2->hasHonors();
+    echo $avengers->getRating();
   ?>
 </body>
 </html>
