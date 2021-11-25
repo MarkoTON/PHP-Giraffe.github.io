@@ -10,37 +10,33 @@
 
   <br>
   <?php 
-    class Book {
-      var $title;
-      var $author;
-      var $pages;      
+    class Student {
+      var $name;
+      var $major;
+      var $gpa;      
 
-      function __construct($aTitle, $aAuthor, $aPages)
+      function __construct($name, $major, $gpa)
       {
-        // echo "New Book Created <br>";
-        // echo "New $name <br>";
-        $this ->title = $aTitle;
-        $this ->author = $aAuthor;
-        $this ->pages = $aPages;
+        $this ->name = $name;
+        $this ->major = $major;
+        $this ->gpa = $gpa;
+      }
+      // PHP ne moze da stampa cist true/false zato mora pod stringom
+      function hasHonors(){
+        if($this->gpa >= 3.5){
+          return "true";
+        } else {
+          return "false";
+        };
       }
     };
 
-    // $book1 = new Book("Marko");
-    // $book1->title = "Harry Potter";
-    // $book1->author = "JK Rowling";
-    // $book1->pages = 400;
+    $student1 = new Student("Jim", "Business", 2.8);
+    $student2 = new Student("Pam", "Art", 3.6);
 
-    // $book2 = new Book("John");
-    // $book2->title = "Title";
-    // $book2->author = "Author";
-    // $book2->pages = 456;
-
-    $book1 = new Book("Title for book 1", "Author for book 1", "Pages for book 1");
-    $book2 = new Book("Title for book 2", "Author for book 2", "Pages for book 3");
-
-    echo $book1->title;
+    echo $student1->hasHonors();
     echo "<br>";
-    echo $book2->title;
+    echo $student2->hasHonors();
   ?>
 </body>
 </html>
