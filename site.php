@@ -9,10 +9,16 @@
 <body>
 
   <br>
-  <?php include "header.html";?>
-
-    <p>This is body</p>
-  
-  <?php include "footer.html";?>
+  <?php 
+    $title = "This is title from site.php";
+    $author = "Author is from site.php";
+    $wordCount = "Word Count is 400 and it comes form site.php";
+    include "article-header.php";
+    include "useful-tools.php";
+    echo "<hr>";
+    sayHi("Marko");
+    echo "<br>";
+    echo $feetInMile;
+  ?>
 </body>
 </html>
