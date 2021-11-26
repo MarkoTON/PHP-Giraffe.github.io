@@ -10,36 +10,34 @@
 
   <br>
   <?php 
-    class Movie {
-      public $title;
-      private $rating;
-
-
-      function __construct($title, $rating)
-      {
-        $this->title = $title;
-        $this->setRating($rating);
+    class Chef {
+      function makeChicken(){
+        echo "The chef makes chicken <br>";
       }
-
-      function getRating(){
-        return $this->rating;
+      function makeSalad(){
+        echo "The chef makes salad <br>";
       }
-
-      function setRating($rating){
-        if($rating == "G" || $rating == "PG-13" || $rating == "R" || $rating == "PG"){
-          $this->rating = $rating;
-        } else {
-          $this->rating = "NR";
-        }
+      function makeSpecialDish(){
+        echo "The chef makes bbq ribs <br>";
       }
-
     };
 
-    $avengers = new Movie("Avengers", "PG-13");
-    // $avengers->rating = "Dog";
-    $avengers->setRating("sdfsd");
-    echo "<br>";
-    echo $avengers->getRating();
+    class ItalianChef extends Chef {
+      function makePasta(){
+        echo "The chef make pasta.";
+      }
+      function makeSpecialDish(){
+        echo "The chef make makaronas. <br>";
+      }
+    }
+
+    $chef = new Chef();
+    $chef->makeSpecialDish();
+
+    $chef1 = new ItalianChef();
+    $chef1->makeSpecialDish();
+    $chef1->makePasta();
+    
   ?>
 </body>
 </html>
